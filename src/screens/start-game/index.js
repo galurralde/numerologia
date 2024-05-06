@@ -1,5 +1,5 @@
 import { Alert, Button, Keyboard, Text, TouchableWithoutFeedback, View } from 'react-native';
-import { Card, Input } from '../../components';
+import { Card, Input, NumberContainer } from '../../components';
 import React, { useState } from 'react';
 
 import colors from '../../constants/colors';
@@ -33,9 +33,9 @@ const StartGame = () => {
 
 
     const confirmedOutput = () => confirmed ?(
-        <Card>
+        <Card style={styles.confirmedContainer}>
             <Text style={styles.confirmedTitle}>Your selected number</Text>
-            <Text style={styles.confirmedNumber}>Number Selected: {selecNumber}</Text>
+            <NumberContainer number={selecNumber}/>
             <Button
                 title= "Star Game"
                 onPress={onHandleStarGame}

@@ -41,6 +41,22 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-around',
         marginTop: 20,
 
-    }
+    },
+    confirmedContainer:{
+        width: '70%',
+        height: 180,
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        marginVertical: 30,
+    },
+    confirmedTitle:{
+        fontSize: 16,
+        
+    },
+    confirmedNumber:{
+        fontSize: 22,
+        fontWeight: 'bold',
+
+    },
 
 });
