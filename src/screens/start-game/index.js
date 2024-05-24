@@ -67,7 +67,7 @@ const StartGame = () => {
                     />            
                     <View style={styles.buttonContainer}>
                         <Button
-                            title=' Reset '
+                            title=' Restart '
                             onPress={onHandleReset}
                             color={colors.primary}
                         />

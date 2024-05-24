@@ -20,14 +20,15 @@ export const styles = StyleSheet.create({
         paddingVertical: 5,
         textAlign: 'center',
     },
-    inputContainer:{        
+    inputContainer:{     
+        width: '70%',   
         justifyContent:'center',
         alignItems:'center',
         marginHorizontal: 20,        
         paddingVertical: 20,
     },
     input:{
-        width: '100%',
+        //width: '100%',
         //borderBottomColor: colors.primary,
         //borderBottomWidth: 1,
         minWidth: 70,
@@ -37,7 +38,7 @@ export const styles = StyleSheet.create({
     },
     buttonContainer:{
         flexDirection: 'row',     
-        width: '73%',
+        width: '70%',
         justifyContent: 'space-around',
         marginTop: 20,
 
