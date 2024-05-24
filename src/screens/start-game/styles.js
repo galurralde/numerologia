@@ -48,6 +48,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         marginVertical: 30,
+        borderRadius: 5,
     },
     confirmedTitle:{
         fontSize: 16,
