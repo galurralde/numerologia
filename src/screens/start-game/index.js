@@ -5,9 +5,9 @@ import React, { useState } from 'react';
 import colors from '../../constants/colors';
 import { styles } from './styles';
 
-const StartGame = () => {
+const StartGame = ({onStartGame}) => {
     const [number, setNumber] = useState('');
-    const [selecNumber, setSelectNumber] = useState(null);
+    const [selectedNumber, setSelectedNumber] = useState(null);
     const [confirmed, setConfirmed] = useState(false);
 
 
@@ -24,21 +24,21 @@ const StartGame = () => {
             Alert.alert('Numero Invalido','El numero ingresado debe estar entre 1 y 99',[{text:'Okey', style: 'destructive', onPress: onHandleReset}]);
         } else {
             setConfirmed(true);
-            setSelectNumber(chosenNumber);
+            setSelectedNumber(chosenNumber);
             setNumber('');
         }
     
     }
-    const onHandleStarGame = () => {}
+    
 
 
     const confirmedOutput = () => confirmed ?(
         <Card style={styles.confirmedContainer}>
             <Text style={styles.confirmedTitle}>Your selected number</Text>
-            <NumberContainer number={selecNumber}/>
+            <NumberContainer number={selectedNumber}/>
             <Button
-                title= "Star Game"
-                onPress={onHandleStarGame}
+                title= "Start Game"
+                onPress={() => onStartGame(selectedNumber)}
                 color={colors.primary}
             />
 
